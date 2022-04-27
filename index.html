@@ -55,6 +55,14 @@
 					>
 						San Marino
 					</button>
+					<button
+						id="vaticano"
+						type="button"
+						class="btn btn-light"
+						style="height: 50px"
+					>
+						Vaticano
+					</button>
 					<svg
 						xmlns:svg="http://www.w3.org/2000/svg"
 						xmlns="http://www.w3.org/2000/svg"
@@ -674,7 +682,8 @@
 							Souvenir dalle regioni
 						</h1>
 						<h3>
-							clicca su una regione o sul bottone di San Marino!
+							clicca su una regione o sui bottoni di San Marino e
+							Vaticano!
 						</h3>
 						<h4>Oppure scegli dalla lista qui sotto...</h4>
 						<button
@@ -684,6 +693,14 @@
 							style="height: 50px; margin: 2px"
 						>
 							San Marino
+						</button>
+						<button
+							id="vaticano-button"
+							type="button"
+							class="btn btn-info"
+							style="height: 50px; margin: 2px"
+						>
+							Vaticano
 						</button>
 						<button
 							id="aosta-button"
@@ -896,6 +913,9 @@
 						<div id="marino-gallery" style="display: none">
 							<div data-includeHTML="marino.html"></div>
 						</div>
+						<div id="vaticano-gallery" style="display: none">
+							<div data-includeHTML="vaticano.html"></div>
+						</div>
 						<div id="aosta-gallery" style="display: none">
 							<div data-includeHTML="aosta.html"></div>
 						</div>
@@ -991,6 +1011,7 @@
 			"basilicata",
 			"sardegna",
 			"marino",
+			"vaticano",
 		];
 
 		let base_color = "#ffcfb1";
@@ -1005,6 +1026,7 @@
 
 		let name_map = {
 			marino: "San Marino",
+			vaticano: "Vaticano",
 			aosta: "Valle D'Aosta",
 			piemonte: "Piemonte",
 			lombardia: "Lombardia",
